@@ -4,3 +4,13 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+    --font-wight: var(--light-font-regular);
+}
+
+:root.theme-dark {
+    --font-wight: var(--dark-font-regular);
+    --background-color: #000000;
+    --accent-color: #00CC14;
+}
