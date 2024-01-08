@@ -71,19 +71,27 @@
 
 }
 
+.theme-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .theme-menu__button {
   border:none;
   font-size: 14px;
   text-transform: inherit;
-  display: flex;
-  gap: 6px;
   position: relative;
+  padding: 0;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
-.theme-menu__button::before {
+.theme-menu__item::before {
   content:"▶";
   display: block;
   opacity: 0;
+  color:var(--disabled-color);
   animation-name: shiftArrow;
   animation-duration: 0.5s;
   animation-iteration-count: infinite;
@@ -93,16 +101,17 @@
 
 .theme-menu__button:disabled {
   color:var(--disabled-color);
-  
-}
-
-.theme-menu__button:disabled::before {
- opacity: 1;
 }
 
 .theme-menu__button:focus {
 outline: none;
 }
+
+
+.theme-menu__button:hover {
+  color:var(--disabled-color);
+}
+
 
 .theme-menu__button:focus-visible {
   color:var(--disabled-color);
@@ -112,11 +121,11 @@ outline: none;
   content: "";
   display: block;
   position: absolute;
-  height: 1.4px;
+  height: 2px;
   width: 100%;
   transform: scaleX(0);
   left: 0;
-  bottom: 0;
+  bottom: -2px;
   background-color: var(--disabled-color);
   transition: 0.5s;
 }
@@ -124,3 +133,10 @@ outline: none;
 .theme-menu__button:focus-visible::after {
   transform: scaleX(1);
 } 
+
+
+.theme-menu__item:has(.theme-menu__button:disabled)::before {
+  opacity: 1;
+}
+
+
