@@ -188,10 +188,8 @@ flex-direction: column;
 }
 
 .card__buttons {
-
 display: flex;
 justify-content: end;
-
 }
 
 .card__like-button {
