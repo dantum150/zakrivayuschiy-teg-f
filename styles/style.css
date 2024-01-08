@@ -77,18 +77,50 @@
   text-transform: inherit;
   display: flex;
   gap: 6px;
+  position: relative;
 }
 
 .theme-menu__button::before {
   content:"▶";
   display: block;
   opacity: 0;
+  animation-name: shiftArrow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
 }
 
 .theme-menu__button:disabled {
   color:var(--disabled-color);
+  
 }
 
 .theme-menu__button:disabled::before {
  opacity: 1;
 }
+
+.theme-menu__button:focus {
+outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  color:var(--disabled-color);
+}
+
+.theme-menu__button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 1.4px;
+  width: 100%;
+  transform: scaleX(0);
+  left: 0;
+  bottom: 0;
+  background-color: var(--disabled-color);
+  transition: 0.5s;
+}
+
+.theme-menu__button:focus-visible::after {
+  transform: scaleX(1);
+} 
