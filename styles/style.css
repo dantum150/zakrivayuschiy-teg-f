@@ -17,7 +17,7 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
-  font-family: var(--main-font) Arial, Helvetica, sans-serif;
+  font-family: var(--main-font), Arial,  sans-serif;
   font-variation-settings: 'wght' var(--font-wight);
   background-color: var(--background-color);
   color:var(--accent-color);
@@ -79,7 +79,7 @@
 
 .theme-menu__button {
   border:none;
-  font-size: 14px;
+  font-size:var(--small-general-size);
   text-transform: inherit;
   position: relative;
   padding: 0;
@@ -138,5 +138,67 @@ outline: none;
 .theme-menu__item:has(.theme-menu__button:disabled)::before {
   opacity: 1;
 }
+
+.card {
+display: flex;
+flex-direction: column;
+}
+
+.card__title {
+  border: 2px solid var(--accent-color);
+  padding: 4px 10px 6px;
+  font-variation-settings:"wght" 700;
+}
+
+
+.card__image {
+  position: relative;
+}
+
+.card__lable {
+  font-family: var(--accent-font);
+  text-transform: uppercase;
+  font-size: var(--small-general-size);
+  position: absolute;
+  opacity: 0.5;
+  right: 11px;
+  top:23px;
+  mix-blend-mode: hard-light;
+  text-shadow:0 0 1px var(--text-stroke)
+}
+@supports ( -webkit-text-stroke: 1px var(--text-stroke)) {
+  .card__lable {
+    -webkit-text-stroke: 1px var(--text-stroke);
+  }
+}
+
+.card__info {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.card__text {
+  display: flex;
+  flex-direction: column;
+  color: var(--accent-color);
+  font-size: var(--general-size);
+  gap: 27px;
+}
+
+.card__buttons {
+
+display: flex;
+justify-content: end;
+
+}
+
+.card__like-button {
+  font-family: var(--accent-font);
+  padding: 12.5px 37px;
+  border: 2px solid var(--accent-color);
+}
+
 
 

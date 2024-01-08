@@ -55,4 +55,7 @@ ol {
 
 button {
   background-color: transparent;
+  appearance: none;
+  border:none;
+  
 }
