@@ -142,6 +142,7 @@ outline: none;
 .card {
 display: flex;
 flex-direction: column;
+
 }
 
 .card__title {
