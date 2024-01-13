@@ -253,10 +253,20 @@ color:var(--button-text-color);
 }
 
 .card__icon-button {
+
+}
+
+
+.card__icon-button:hover .core {
+  fill: var(--accent-color);
+  
+
 }
 
 .core {
 fill:none;
+transition: 0.3s ease-out 0.3s 0.03s;
+
 }
 
 .contour {
@@ -265,12 +275,16 @@ fill:none;
 
 .main-body {
   fill:none;
+  transition: 0.05s;
 }
 
 .sparks {
-  
+  fill:var(--filling-color);
+  opacity: 0;
 }
 
 .heart {
 
 }
+
+
