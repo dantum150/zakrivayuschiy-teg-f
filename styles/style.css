@@ -26,8 +26,11 @@
   background-image: repeating-linear-gradient(90deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px), 
   repeating-linear-gradient(0deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px), 
   linear-gradient(180deg, var(--start-gradient-color), var(--end-gradient-color));
-    background-size: cover;
-    background-attachment: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  gap:100px;
 }
 
 .header {
@@ -138,15 +141,21 @@ outline: none;
   transform: scaleX(1);
 } 
 
-
 .theme-menu__item:has(.theme-menu__button:disabled)::before {
   opacity: 1;
+}
+
+.main {
+display: flex;
+flex-direction: column;
+gap: 50px;
 }
 
 .card {
 display: flex;
 flex-direction: column;
-
+border: 1px solid var(--accent-color);
+background: var(--background-color);
 }
 
 .card__title {
@@ -158,6 +167,8 @@ flex-direction: column;
 
 .card__image {
   position: relative;
+  border-top:1px solid var(--accent-color);
+  border-bottom: 1px solid var(--accent-font);
 }
 
 .card__lable {
@@ -195,6 +206,7 @@ flex-direction: column;
 .card__buttons {
 display: flex;
 justify-content: end;
+gap:5px;
 }
 
 .card__like-button {
@@ -233,7 +245,32 @@ box-shadow: 2px 2px 0 var(--accent-color);
 
 .primary__button:hover::before {
   translate:0;
-  
+}
 
+.button__text {
+mix-blend-mode: difference;
+color:var(--button-text-color);
+}
+
+.card__icon-button {
+}
+
+.core {
+fill:none;
+}
+
+.contour {
+
+}
+
+.main-body {
+  fill:none;
+}
+
+.sparks {
+  
+}
+
+.heart {
 
 }

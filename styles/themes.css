@@ -11,6 +11,9 @@
     --background-line-color: #d3d3d3;
     --start-gradient-color:#e7e7e7;
     --end-gradient-color:#1a1a1a;
+    --button-text-color:#fff;
+    --contour-color:#000;
+    --filling-color:#FF0000;
 }
 
 :root.theme-dark {
@@ -22,6 +25,9 @@
     --background-line-color:#000;
     --start-gradient-color:#007f0c;
     --end-gradient-color:#004306;
+    --contour-color:#00CC14;
+    --filling-color:#FF0000;
+    
 
 
 }
