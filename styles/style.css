@@ -259,32 +259,63 @@ color:var(--button-text-color);
 
 .card__icon-button:hover .core {
   fill: var(--accent-color);
-  
-
+  transition: 0.3s ease-out 0s;
 }
 
-.core {
-fill:none;
-transition: 0.3s ease-out 0.3s 0.03s;
 
+
+.core {
+fill:transparent;
+transition: 0.3s ease-out 0.03s;
 }
 
 .contour {
-
+transition: 0.3s 0.07s;
 }
 
 .main-body {
-  fill:none;
-  transition: 0.05s;
+  fill:transparent;
+  transition: 0.3s ease-out 0s;
+  
 }
+
+.card__icon-button:hover .main-body {
+  fill: var(--accent-color);
+  transition: 0.3s ease-out 0.05s;
+}
+
+.card__icon-button:active .core {
+  fill:var(--filling-color);
+  }
+  
+  .card__icon-button:active .main-body {
+    fill:var(--filling-color);
+  }
 
 .sparks {
   fill:var(--filling-color);
   opacity: 0;
+  transition: 0.3s 0.09s;
 }
 
 .heart {
 
 }
 
+.like-icon.is-liked .contour {
+fill: var(--filling-color)
+}
 
+.like-icon.is-liked .core {
+  fill: var(--filling-color)
+  }
+
+  .like-icon.is-liked .main-body {
+    fill: var(--filling-color)
+    }
+
+    .like-icon.is-liked .sparks {
+      opacity: 1;
+      
+
+    }
