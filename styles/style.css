@@ -21,9 +21,13 @@
   font-variation-settings: 'wght' var(--font-wight);
   background-color: var(--background-color);
   color:var(--accent-color);
-  /* background-image: repeating-linear-gradient(90deg, #d3d3d3, 2px, transparent 2px, transparent 4px), 
-  repeating-linear-gradient(0, #808080, #808080 2px, transparent 2px, transparent 4px); */
   padding-top: 102px;
+
+  background-image: repeating-linear-gradient(90deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px), 
+  repeating-linear-gradient(0deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px), 
+  linear-gradient(180deg, var(--start-gradient-color), var(--end-gradient-color));
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .header {
@@ -200,4 +204,36 @@ justify-content: end;
 }
 
 
+.primary__button {
+transition: 1s;
+position: relative;
+overflow:hidden;
+}
 
+.primary__button:focus {
+outline:none;
+}
+
+.primary__button:focus-visible {
+box-shadow: 2px 2px 0 var(--accent-color);
+}
+
+.primary__button::before {
+  content: "";
+  display: block;
+  translate:-100%;
+  transition: 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background-color: var(--accent-color);
+}
+
+.primary__button:hover::before {
+  translate:0;
+  
+
+
+}
