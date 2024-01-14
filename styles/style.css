@@ -270,7 +270,7 @@ transition: 0.3s ease-out 0.03s;
 }
 
 .contour {
-transition: 0.3s 0.07s;
+transition: 0.1s;
 }
 
 .main-body {
@@ -303,7 +303,8 @@ transition: 0.3s 0.07s;
 }
 
 .like-icon.is-liked .contour {
-fill: var(--filling-color)
+fill: var(--filling-color);
+transition: 0.3s 0.06s;
 }
 
 .like-icon.is-liked .core {
@@ -316,6 +317,23 @@ fill: var(--filling-color)
 
     .like-icon.is-liked .sparks {
       opacity: 1;
-      
+    }
+
+    .heart {
+animation-name: scaleheart;
+animation-delay:0.1s;
+animation-duration: 0.3s;
+animation-timing-function:ease-in;
+    }
+
+    .like-icon.is-liked .sparks {
+      animation-name: showsparks;
+      animation-delay:0.3s;
+      animation-duration: 0.3s;
+      animation-timing-function:ease-in;
+      animation-direction:alternate;
+    }
+    
+    .like-icon .sparks {
 
     }
