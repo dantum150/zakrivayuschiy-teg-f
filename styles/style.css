@@ -315,10 +315,6 @@ transition: 0.3s 0.06s;
     fill: var(--filling-color)
     }
 
-    .like-icon.is-liked .sparks {
-      opacity: 1;
-    }
-
     .heart {
 animation-name: scaleheart;
 animation-delay:0.1s;
@@ -333,7 +329,24 @@ animation-timing-function:ease-in;
       animation-timing-function:ease-in;
       animation-direction:alternate;
     }
-    
-    .like-icon .sparks {
 
-    }
+   .dialog {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: max-content max-content;
+    grid-template-areas: 
+    "floopy text"
+    "button button";
+   }
+
+.floopy {
+grid-area: floopy;
+}
+
+.dialog__text {
+  grid-area: text;
+}
+
+   .dialog__button {
+grid-area: buttom;
+   }
