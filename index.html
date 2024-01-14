@@ -71,7 +71,7 @@
         <div class="card__info">
           <div class="card__text">
             <p>
-              Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+              Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И,<br> возможно, подумать, как новые знания могут повлиять на ваше будущее.
             </p>
 
             <p>
@@ -95,7 +95,7 @@
 
             <button class="card__like-button primary__button">
               <span class="button__text">
-                like
+                Like
               </span>
             </button>
           </div>
@@ -104,18 +104,32 @@
     </main>
 
 
-    <dialog open class="dialog">
-<svg>
-<use class="floppy" href="/svg/formatted floppy.svg#floppy">
-</svg>
-
-<h4 class="dialog__text">
-  Вставьте дискету, чтобы продолжить
-</h4>
-<button class="primary__button dialog__button button__text">ok</button>
-
-
+    <dialog class="dialog">
+      <div class="dialog__content">
+        <svg>
+          <use class="floppy" href="/svg/formatted floppy.svg#floppy">
+          </svg>
+    
+          <span class="dialog__text">
+            Вставьте дискету, чтобы продолжить
+          </span>
+          <form>
+          <button class="primary__button dialog__button">
+            <span class="button__text">ok</span>
+          </button>
+        </form>
+      </div>
     </dialog>
+
+    <button class="primary__button">
+      <svg>
+        <use class="floppy" href="/svg/formatted floppy.svg#floppy">
+        </svg>
+        <span class="button__text">
+          Вставьте дискету, чтобы продолжить
+        </span>
+    </button>
+
 
     <script src="./scripts/like.js"></script>
   </body>

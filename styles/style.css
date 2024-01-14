@@ -162,6 +162,8 @@ background: var(--background-color);
   border: 2px solid var(--accent-color);
   padding: 4px 10px 6px;
   font-variation-settings:"wght" 700;
+  font-size: 18px;
+  line-height: normal;
 }
 
 
@@ -189,7 +191,7 @@ background: var(--background-color);
 }
 
 .card__info {
-  padding: 25px;
+  padding: 25px 29px 27px 25px;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -220,6 +222,10 @@ gap:5px;
 transition: 1s;
 position: relative;
 overflow:hidden;
+font-size: 12px;
+font-family: var(--accent-font);
+padding: 12.5px 37px;
+border: 2px solid var(--accent-color);
 }
 
 .primary__button:focus {
@@ -330,7 +336,7 @@ animation-timing-function:ease-in;
       animation-direction:alternate;
     }
 
-   .dialog {
+   .dialog__content {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: max-content max-content;
@@ -338,6 +344,18 @@ animation-timing-function:ease-in;
     "floopy text"
     "button button";
    }
+
+   .dialog::backdrop {
+    background-color: rgb(0 0 0 / 0.3);
+   }
+
+   .dialog:not([open]) {
+    pointer-events: none;
+    opacity: 0;
+  } 
+
+  .dialog__form {
+  }
 
 .floopy {
 grid-area: floopy;
@@ -348,5 +366,5 @@ grid-area: floopy;
 }
 
    .dialog__button {
-grid-area: buttom;
+  grid-area: button;
    }
