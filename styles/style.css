@@ -190,7 +190,19 @@ object-fit: cover;
 }
 
 .card__image__sepia {
-  filter: sepia(100%);
+  filter: sepia(10%) brightness(50%) saturate(90%) hue-rotate(10deg);
+}
+
+.card__image__invert {
+  filter: invert(100%);
+}
+
+.card__image__grayscale {
+  filter: grayscale(100%);
+}
+
+.card__image__blure {
+  filter: opacity(90%)  
 }
 
 .card__lable {
@@ -203,6 +215,8 @@ object-fit: cover;
   top: 23px;
   mix-blend-mode: hard-light;
   text-shadow: 0 0 1px var(--text-stroke);
+
+  z-index: 1;
 }
 @supports (-webkit-text-stroke: 1px var(--text-stroke)) {
   .card__lable {
@@ -241,9 +255,9 @@ object-fit: cover;
   transition: 1s;
   position: relative;
   overflow: hidden;
-  font-size: 12px;
+  font-size: 14px;
   font-family: var(--accent-font);
-  padding: 12.5px 37px;
+  padding: 12.5px 33px;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
 }
