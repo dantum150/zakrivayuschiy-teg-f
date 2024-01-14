@@ -399,4 +399,7 @@ height: 28px;
     gap:8px;
    }
 
-   
+   img {
+    object-fit:cover;
+    
+   }
