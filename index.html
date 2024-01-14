@@ -104,29 +104,29 @@
     </main>
 
 
-    <dialog class="dialog">
-      <div class="dialog__content">
-        <svg>
+    <dialog id="dialog-id" class="dialog">
+      
+        <svg class="svg__floppy">
           <use class="floppy" href="/svg/formatted floppy.svg#floppy">
           </svg>
     
           <span class="dialog__text">
             Вставьте дискету, чтобы продолжить
           </span>
-          <form>
+          <form class="dialog__form">
           <button class="primary__button dialog__button">
-            <span class="button__text">ok</span>
+            <span class="button__text">ОК</span>
           </button>
         </form>
-      </div>
+     
     </dialog>
 
-    <button class="primary__button">
-      <svg>
+    <button  onclick="window['dialog-id'].showModal()" class="primary__button memory__button">
+      <svg class="svg__floppy">
         <use class="floppy" href="/svg/formatted floppy.svg#floppy">
         </svg>
         <span class="button__text">
-          Вставьте дискету, чтобы продолжить
+          Сохранить на память
         </span>
     </button>
 
