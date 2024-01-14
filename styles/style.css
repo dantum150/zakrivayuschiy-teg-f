@@ -173,8 +173,24 @@
 }
 
 .card__image__main {
- 
-  object-fit: cover;
+width: 100%;
+object-fit: cover;
+}
+
+.card__image__brightness {
+  filter: brightness(180%);
+}
+
+.card__image__hue-rotate {
+  filter: hue-rotate(0.5turn)
+}
+
+.card__image__saturate {
+  filter: saturate(490%);
+}
+
+.card__image__sepia {
+  filter: sepia(100%);
 }
 
 .card__lable {
@@ -195,7 +211,7 @@
 }
 
 .card__info {
-  padding: 25px 29px 27px 25px;
+  padding: 21px 29px 27px 25px;
   display: flex;
   flex-direction: column;
   gap: 20px;
