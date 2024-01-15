@@ -15,6 +15,8 @@
     --contour-color:#000;
     --filling-color:#FF0000;
     --floooy-color:#fff;
+    --background-dialog-color:#fff;
+    --dialog-text-color:#000;
 }
 
 :root.theme-dark {
@@ -29,22 +31,27 @@
     --contour-color:#00CC14;
     --filling-color:#FF0000;
     --floooy-color:#00CC14;
+    --background-dialog-color:#000;
+    --dialog-text-color:#00CC14;
+    --button-text-color:#00CC14;
     
 }
 
 @media (prefers-color-scheme: dark) {
     :root.theme-auto {
         --font-wight: var(--dark-font-regular);
-        --background-color: #000000;
-        --accent-color: #00CC14;
-        --disabled-color: #007A0C;
-        --text-stroke:#000;
-        --background-line-color:#000;
-        --start-gradient-color:#007f0c;
-        --end-gradient-color:#004306;
-        --contour-color:#00CC14;
-        --filling-color:#FF0000;
-        --floooy-color:#00CC14;  
+    --background-color: #000000;
+    --accent-color: #00CC14;
+    --disabled-color: #007A0C;
+    --text-stroke:#000;
+    --background-line-color:#000;
+    --start-gradient-color:#007f0c;
+    --end-gradient-color:#004306;
+    --contour-color:#00CC14;
+    --filling-color:#FF0000;
+    --floooy-color:#00CC14;
+    --background-dialog-color:#000;
+    --dialog-text-color:#00CC14;
     }
 }
 
@@ -59,5 +66,7 @@
         --contour-color:#000;
         --filling-color:#FF0000;
         --floooy-color:#fff;
+        --background-dialog-color:#fff;
+        --dialog-text-color:#000;
     }
 }
