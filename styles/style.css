@@ -22,6 +22,7 @@
   background-color: var(--background-color);
   color: var(--accent-color);
   padding-top: 102px;
+  
 
   background-image: repeating-linear-gradient(90deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(0deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px), linear-gradient(180deg, var(--start-gradient-color), var(--end-gradient-color));
