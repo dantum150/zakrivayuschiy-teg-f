@@ -22,7 +22,6 @@
   background-color: var(--background-color);
   color: var(--accent-color);
   padding-top: 102px;
-  
 
   background-image: repeating-linear-gradient(90deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px),
     repeating-linear-gradient(0deg, var(--background-line-color) 0px, var(--background-line-color) 2px, transparent 2px, transparent 4px), linear-gradient(180deg, var(--start-gradient-color), var(--end-gradient-color));
@@ -35,8 +34,8 @@
 }
 
 .container {
- max-width: 696px;
-
+  max-width: 696px;
+  margin: 0 auto;
 }
 
 .header {
@@ -175,12 +174,11 @@
   position: relative;
   border-top: 1px solid var(--accent-color);
   border-bottom: 1px solid var(--accent-font);
-  
 }
 
 .card__image__main {
-width: 100%;
-object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .card__image__brightness {
@@ -188,7 +186,7 @@ object-fit: cover;
 }
 
 .card__image__hue-rotate {
-  filter: hue-rotate(0.5turn)
+  filter: hue-rotate(0.5turn);
 }
 
 .card__image__saturate {
@@ -208,7 +206,7 @@ object-fit: cover;
 }
 
 .card__image__blure {
-  filter: opacity(90%)  
+  filter: opacity(90%);
 }
 
 .card__lable {
@@ -375,7 +373,7 @@ object-fit: cover;
     "button button";
   align-items: center;
   padding: 30px;
- background-color:var(--background-dialog-color);
+  background-color: var(--background-dialog-color);
 }
 
 .dialog::backdrop {
@@ -398,14 +396,13 @@ object-fit: cover;
 
 .dialog__text {
   font-family: var(--accent-font);
-  color:var(--dialog-text-color);
+  color: var(--dialog-text-color);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 150%; /* 21px */
   text-transform: uppercase;
   grid-area: text;
-  
 }
 
 .svg__floppy {
@@ -420,5 +417,4 @@ object-fit: cover;
   flex-direction: column;
   align-items: center;
   gap: 8px;
-  
 }
