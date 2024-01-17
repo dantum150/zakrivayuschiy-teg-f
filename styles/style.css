@@ -219,7 +219,6 @@
   top: 23px;
   mix-blend-mode: hard-light;
   text-shadow: 0 0 1px var(--text-stroke);
-
   z-index: 1;
 }
 @supports (-webkit-text-stroke: 1px var(--text-stroke)) {
