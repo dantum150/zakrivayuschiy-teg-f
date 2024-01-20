@@ -223,9 +223,11 @@
   text-shadow: 0 0 1px var(--text-stroke);
   z-index: 1;
 }
-@supports (-webkit-text-stroke: 1px var(--text-stroke)) {
+@supports (-webkit-text-stroke: 1px var(--text-stroke)) or (text-stroke: 1px var(--text-stroke)) {
   .card__lable {
     -webkit-text-stroke: 1px var(--text-stroke);
+    text-stroke: 1px var(--text-stroke);
+    text-shadow: none;
   }
 }
 
