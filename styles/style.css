@@ -441,7 +441,6 @@ height: 39px;
   gap: 8px;
 }
 
-
 @media screen and (min-width: 1440px) {
   .header {
     min-height: 364px;
