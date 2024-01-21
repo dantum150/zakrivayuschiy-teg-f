@@ -44,7 +44,7 @@
   min-height: 323px;
   grid-template-rows: 1fr max-content 1fr;
   background-color: var(--background-color);
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font), fantasy;
   border: 2px solid var(--accent-color);
   text-transform: uppercase;
   justify-content: center;
@@ -212,7 +212,7 @@
 }
 
 .card__lable {
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
   font-size: var(--small-general-size);
   position: absolute;
@@ -261,7 +261,7 @@
   position: relative;
   overflow: hidden;
   font-size: 14px;
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font), fantasy;
   padding: 12.5px 21px;
   border: 2px solid var(--accent-color);
   background-color: var(--background-color);
@@ -412,7 +412,7 @@
 }
 
 .dialog__text {
-  font-family: var(--accent-font), fantasy, sans-serif;
+  font-family: var(--accent-font), fantasy;
   color: var(--dialog-text-color);
   font-size: 14px;
   font-style: normal;
